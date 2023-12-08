@@ -1,0 +1,40 @@
+{
+    "controlador.listas.DynamicList": {
+        "header": {
+            "info": {
+                "@class": "modelo.Persona",
+                "id": 1,
+                "nombre_tramite": "cambio de clave",
+                "duracion": 4
+            },
+            "next": {
+                "info": {
+                    "@class": "modelo.Persona",
+                    "id": 2,
+                    "nombre_tramite": "actualizacion de datos",
+                    "duracion": 7
+                },
+                "next": {
+                    "info": {
+                        "@class": "modelo.Persona",
+                        "id": 3,
+                        "nombre_tramite": "asignacion de afiliados",
+                        "duracion": 15
+                    },
+                    "next": {
+                        "info": {
+                            "@class": "modelo.Persona",
+                            "id": 4,
+                            "nombre_tramite": "recuperacion de clave",
+                            "duracion": 3
+                        }
+                    }
+                }
+            }
+        },
+        "last": {
+            "@reference": "..\/header\/next\/next\/next"
+        },
+        "length": 4
+    }
+}
